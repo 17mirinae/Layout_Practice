@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+        LayoutPractice
+    </title>
+    <style>
+        #header {
+            background-color: lightgrey;
+            width: inherit;
+            height: 200px;
+        }
+        #leftbox {
+            display:inline-block;
+            background-color: dimgrey;
+            width: 300px;
+            height: 300px;
+            float: left;
+        }
+        #body {
+            display: inline-block;
+            width: 500px;
+            float: left;
+        }
+        #box1 {
+            background-color: red;
+            display:block;
+            width: 80px;
+            height: 80px;
+        }
+        #box2 {
+            background-color: tomato;
+            display:block;
+            width: 80px;
+            height: 80px;
+        }
+        #centerbox {
+            display: inline-block;
+            background-color: red;
+            width: 200px;
+            height: 100px;
+            float: left;
+        }
+        #rightbox {
+            display: inline-block;
+            background-color: tomato;
+            width: 200px;
+            height: 150px;
+            float: left;
+        }
+        #enter {
+            display: block;
+            width: inherit;
+            height: 300px;
+        }
+        #footer {
+            background-color: slategrey;
+            display:block;
+            width: inherit;
+            height: 150px;
+        }
+        #box {
+            width: 250px;
+            height: 100px;
+            position: relative;
+            display:inline-block;
+            background-color: black;
+            color: white;
+            margin-left: 50px;
+            top: -20px;
+        }
+        #box3 {
+            background-color: white;
+            height: 30px;
+            position: relative;
+            width: 1000px;
+            margin-left: 100px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">Header</div>
+    <div id="enter">
+        <div id="leftbox">
+            LEFT box
+            <div id="box1">Box1</div>
+            <div id="box2">Box2</div>
+        </div>
+        <div id="body">
+            <div id="centerbox">CENTER box</div>
+            <div id="rightbox">RIGHT box</div>
+        </div>
+    </div>
+    <div id="footer">
+        Footer
+        <div id="box3">Box3</div>
+        <div id="box">Box</div>
+    </div>
+</body>
+</html>
